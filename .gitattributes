@@ -1,0 +1,2 @@
+# Normaliza as quebras de linha (evita problemas CRLF x LF entre Windows e Linux)
+* text=auto eol=lf

@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Dados gerados pela aplicação (não devem ir para o GitHub)
+uploads/
+database.db
+*.log
+
+# Segredos e configurações locais
+.env
+
+# Editor / sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,13 @@
+# Blueprint do Render (Infrastructure as Code).
+# Opcional: o deploy também pode ser feito manualmente pelo painel (veja o README).
+services:
+  - type: web
+    name: upload-download-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT --workers 2 --timeout 60
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.3
