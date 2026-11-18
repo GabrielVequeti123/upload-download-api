@@ -2,7 +2,7 @@
 
 API REST desenvolvida em **Python + Flask** para enviar (upload) e baixar (download) arquivos, com registro dos envios em um banco **SQLite**. Projeto de atividade escolar, preparado para deploy no **[Render](https://render.com)**.
 
-🔗 **API publicada:** `https://SEU-SERVICO.onrender.com` *(substitua pelo link real após o deploy)*
+🔗 **API publicada:** `https://upload-download-api-73s1.onrender.com`
 
 ---
 
@@ -206,9 +206,9 @@ O arquivo `render.yaml` já está no repositório. No Render: **New + → Bluepr
 ### Testando o link público
 
 ```bash
-curl https://SEU-SERVICO.onrender.com/health
-curl -F "file=@teste.txt" https://SEU-SERVICO.onrender.com/uploads/upload
-curl -OJ https://SEU-SERVICO.onrender.com/downloads/download/teste.txt
+curl https://upload-download-api-73s1.onrender.com/health
+curl -F "file=@teste.txt" https://upload-download-api-73s1.onrender.com/uploads/upload
+curl -OJ https://upload-download-api-73s1.onrender.com/downloads/download/teste.txt
 ```
 
 > No plano gratuito o serviço "dorme" após ~15 min sem acesso; a primeira requisição depois disso pode levar cerca de 1 minuto.
